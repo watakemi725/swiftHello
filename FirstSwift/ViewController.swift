@@ -39,7 +39,12 @@ class ViewController: UIViewController {
     //storyboardで扱うパーツから受け取るアクションの書き方
     @IBAction func plus(){
         number = number+1
+        if number > 5 {
+            label.textColor=UIColor.redColor()
+        }
+        
         label.text = "\(number)"
+        
     }
     @IBAction func minus(){
         number = number-1
